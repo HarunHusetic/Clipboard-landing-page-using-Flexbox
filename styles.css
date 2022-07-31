@@ -82,7 +82,6 @@ ul {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 80%;
   margin: 0 auto;
 }
 
@@ -121,7 +120,7 @@ header .text-container h1 {
 .main-section .flex-container {
   position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   margin-bottom: 170px;
   flex-wrap: wrap;
@@ -135,7 +134,7 @@ header .text-container h1 {
 .main-section .flex-container .side-img-container img {
   position: absolute;
   top: 0;
-  left: -250px;
+  left: -30px;
   max-width: 800px;
   min-width: 400px;
 }
@@ -354,7 +353,13 @@ footer .footer-container .icons-container ul li a .icon:hover {
   }
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
+  header {
+    margin-bottom: 250px;
+    background-image: url(./images/bg-header-desktop.png);
+    background-size: cover;
+    background-size: auto;
+  }
   .main-section .flex-container .side-img-container {
     max-width: 600px;
     min-width: 400px;
@@ -404,120 +409,126 @@ footer .footer-container .icons-container ul li a .icon:hover {
 
   footer .footer-container .links-container ul {
     width: auto;
+  } */
+
+@media (max-width: 690px) {
+  .container {
+    width: 100%;
   }
 
-  @media (max-width: 690px) {
-    .btns-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+  .btns-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .btns-container .btn {
-      margin-bottom: 20px;
-      width: 100%;
-    }
+  .btns-container .btn {
+    margin-bottom: 20px;
+    width: 80%;
+  }
 
-    .btns-container .ios {
-      margin-right: 0;
-    }
+  .btns-container .ios {
+    margin-right: 0;
+  }
 
-    header {
-      margin-bottom: 250px;
-    }
+  header {
+    margin-bottom: 250px;
+    background-image: url(./images/bg-header-mobile.png);
+    background-size: cover;
+    background-position: right;
+  }
 
-    .text-container {
-      width: 350px;
-    }
+  .text-container {
+    width: 350px;
+  }
 
-    .main-section .text-container p {
-      padding-bottom: 50px;
-    }
+  .main-section .text-container p {
+    padding-bottom: 50px;
+  }
 
-    .main-section .flex-container {
-      height: auto;
-    }
+  .main-section .flex-container {
+    height: auto;
+  }
 
-    .main-section .flex-container .side-img-container {
-      max-width: 400px;
-      min-width: 200px;
-    }
+  .main-section .flex-container .side-img-container {
+    max-width: 400px;
+    min-width: 200px;
+  }
 
-    .main-section .flex-container .side-img-container img {
-      max-width: 350px;
-      min-width: 200px;
-    }
+  .main-section .flex-container .side-img-container img {
+    max-width: 350px;
+    min-width: 200px;
+  }
 
-    .main-section .img-container {
-      max-width: 400px;
-      min-width: 100px;
-      margin: 0 auto;
-    }
+  .main-section .img-container {
+    max-width: 400px;
+    min-width: 100px;
+    margin: 0 auto;
+  }
 
-    .main-section .img-container img {
-      max-width: 350px;
-      min-width: 100px;
-      margin: 0 auto;
-    }
+  .main-section .img-container img {
+    max-width: 350px;
+    min-width: 100px;
+    margin: 0 auto;
+  }
 
-    .features-and-company-section {
-      margin-bottom: 100px;
-    }
+  .features-and-company-section {
+    margin-bottom: 100px;
+  }
 
-    .features-and-company-section .features-container {
-      margin-bottom: 100px;
-    }
+  .features-and-company-section .features-container {
+    margin-bottom: 100px;
+  }
 
-    .features-and-company-section .companies-logos {
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 0;
-    }
+  .features-and-company-section .companies-logos {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
 
-    .features-and-company-section .companies-logos .company-logo {
-      margin-bottom: 100px;
-      height: 35px;
-      width: 125px;
-    }
+  .features-and-company-section .companies-logos .company-logo {
+    margin-bottom: 100px;
+    height: 35px;
+    width: 125px;
+  }
 
-    .download-section {
-      margin-top: -50px;
-    }
+  .download-section {
+    margin-top: -50px;
+  }
 
-    footer {
-      margin-top: 0px;
-      width: 350px;
-    }
+  footer {
+    margin-top: 0px;
+    width: 350px;
+  }
 
-    footer .footer-container {
-      width: 350px;
-      margin-bottom: 25px;
-    }
+  footer .footer-container {
+    width: 350px;
+    margin-bottom: 25px;
+  }
 
-    footer .footer-container .links-container {
-      margin-top: -50px;
-    }
+  footer .footer-container .links-container {
+    margin-top: -50px;
+  }
 
-    footer .footer-container .icons-container {
-      margin-top: -50px;
-    }
+  footer .footer-container .icons-container {
+    margin-top: -50px;
+  }
 
-    footer .footer-container .logo-container {
-      height: 50px;
-    }
+  footer .footer-container .logo-container {
+    height: 50px;
+  }
 
-    footer .footer-container .logo-container img {
-      height: 50px;
-    }
+  footer .footer-container .logo-container img {
+    height: 50px;
+  }
 
-    footer .footer-container .links-container ul {
-      width: auto;
-    }
+  footer .footer-container .links-container ul {
+    width: auto;
+  }
 
-    footer .attribution {
-      margin: 0 auto;
-      width: 250px;
-    }
+  footer .attribution {
+    margin: 0 auto;
+    width: 250px;
   }
 }

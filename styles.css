@@ -118,25 +118,27 @@ header .text-container h1 {
 }
 
 .main-section .flex-container {
-  position: relative;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 170px;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .main-section .flex-container .side-img-container {
-  max-width: 800px;
-  min-width: 400px;
+  /* max-width: 800px;
+  min-width: 400px; */
+  max-width: 50%;
 }
 
 .main-section .flex-container .side-img-container img {
-  position: absolute;
+  width: 100%;
+  height: auto;
+  /* position: absolute;
   top: 0;
-  left: -30px;
-  max-width: 800px;
-  min-width: 400px;
+  left: -30px; */
+  transform: translateX(-40%);
 }
 
 .main-section .flex-container .beside-image-text {
@@ -154,6 +156,16 @@ header .text-container h1 {
 
 .main-section .text-container {
   margin-bottom: 50px;
+}
+
+.main-section .img-container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.main-section .img-container img {
+  width: 100%;
+  height: auto;
 }
 
 .features-and-company-section .text-container {
@@ -263,31 +275,39 @@ footer .footer-container .icons-container ul li a .icon:hover {
 }
 
 @media (max-width: 1370px) {
-  .main-section .flex-container .side-img-container {
-    max-width: 700px;
-    min-width: 400px;
+  .main-section .flex-container {
+    flex-wrap: wrap;
+    flex-direction: column;
   }
+
+  /* .main-section .flex-container .side-img-container {
+    /* max-width: 700px;
+    min-width: 400px; 
+    width: 80%;
+  } */
 
   .main-section .flex-container .side-img-container img {
-    max-width: 700px;
-    min-width: 400px;
-  }
-
-  .main-section .img-container {
-    max-width: 700px;
-    min-width: 400px;
-    margin: 0 auto;
-  }
-
-  .main-section .img-container img {
-    max-width: 700px;
-    min-width: 400px;
-    margin: 0 auto;
+    /* max-width: 700px;
+    min-width: 400px; */
+    width: 100%;
+    height: auto;
+    transform: translateX(0);
   }
 
   .main-section .flex-container {
     flex-direction: column;
     height: 1200px;
+  }
+
+  .main-section .img-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .margin-section .img-container img {
+    width: 100%;
+    height: auto;
   }
 
   .main-section .flex-container .side-img-container {
@@ -318,6 +338,7 @@ footer .footer-container .icons-container ul li a .icon:hover {
 
   footer {
     margin-top: 70px;
+    margin: 0 auto;
   }
 
   footer .footer-container {
@@ -339,6 +360,7 @@ footer .footer-container .icons-container ul li a .icon:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: auto;
   }
 
   footer .footer-container .links-container ul li {
@@ -353,63 +375,16 @@ footer .footer-container .icons-container ul li a .icon:hover {
   }
 }
 
-/* @media (max-width: 1200px) {
-  header {
-    margin-bottom: 250px;
-    background-image: url(./images/bg-header-desktop.png);
-    background-size: cover;
-    background-size: auto;
-  }
+@media (max-width: 965px) {
   .main-section .flex-container .side-img-container {
-    max-width: 600px;
-    min-width: 400px;
+    width: 80%;
   }
 
   .main-section .flex-container .side-img-container img {
-    max-width: 600px;
-    min-width: 400px;
+    width: 100%;
+    height: auto;
   }
-
-  .main-section .img-container {
-    max-width: 600px;
-    min-width: 400px;
-    margin: 0 auto;
-  }
-
-  .main-section .img-container img {
-    max-width: 600px;
-    min-width: 400px;
-    margin: 0 auto;
-  }
-
-  .features-and-company-section {
-    margin-bottom: 0;
-  }
-
-  .features-and-company-section .features-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .features-and-company-section .companies-logos {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 170px;
-  }
-
-  .features-and-company-section .companies-logos .company-logo {
-    margin-bottom: 100px;
-    height: 50px;
-    width: 150px;
-  }
-
-  footer {
-    margin: 0 auto;
-  }
-
-  footer .footer-container .links-container ul {
-    width: auto;
-  } */
+}
 
 @media (max-width: 690px) {
   .container {
